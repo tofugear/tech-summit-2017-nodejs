@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "pm2fork": "pm2 start ./bin/www --name wwwfork",
+    "pm2max": "pm2 start ./bin/www -i max",
+    "pm2i4": "pm2 start ./bin/www -i 4"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
