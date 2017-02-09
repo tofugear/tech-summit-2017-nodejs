@@ -36,9 +36,10 @@ router.get('/test1', function(req, res, next) {
   res.end();
 });
 
-router.get('/test2', function(req, res, next) {
-  var n1 = 5000
-  var n2 = 600
+router.get('/Sha256Test', function(req, res, next) {
+
+  var n1 = req.query.n1
+  var n2 = req.query.n2
   var str = 'Hello World'
   var q_list = [];
   for (var i=0; i<n2; i++){
