@@ -61,7 +61,7 @@ https_call = (id, hostname, port, path) =>{
       var tStamp = (new Date).getTime();
       var tSpent = tStamp - startTStamp[id];
       totalTime = totalTime + tSpent;
-      if (str == '5ad03ad38a60d212e98907fcc18935ad7b3f81ec16535ee140e7bb67bccf9d6c'){
+      if (str == 'a90b3113da084e66d80fa8ddd86f61655dd0b02a484af18e173981c02a94b77f'){
         successCnt++
       }
       console.log('ID:', id, 'Time Spent:', tSpent, 'Total Time:', totalTime , 'Success:', successCnt, 'Response:', str);
