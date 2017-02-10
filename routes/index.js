@@ -4,7 +4,7 @@ var Q = require('q');
 var sha256 = require('sha256');
 var https = require('https');
 
-var azfnLBCnt = process.env.AZFNLBCNT
+// var azfnLBCnt = process.env.AZFNLBCNT
 var azfnSubDomain = process.env.AZFNSUBDOMAIN
 var azfnDomain = process.env.AZFNDOMAIN
 var azfnSha256Path = process.env.AZFNSHA256PATH
@@ -77,6 +77,7 @@ router.get('/Sha256Test', function(req, res, next) {
 });
 
 router.get('/Sha256TestLB', function(req, res, next) {
+  var azfnLBCnt = parseInt(req.query.azfnLBCnt, 10);
   var randAzFn = Math.floor(Math.random() * (azfnLBCnt - 1) + 1.5);
   var n1 = req.query.n1
   var n2 = req.query.n2
