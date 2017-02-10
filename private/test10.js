@@ -78,13 +78,15 @@ var totalTime = 0;
 var successCnt = 0;
 var startTStamp = {}; //(new Date).getTime();
 
-for (var i=0; i < 500; i++){
-  http_call(i+1, 'techsummit-nodejs.eastus2.cloudapp.azure.com', 3000, '/test2');
+for (var i=0; i < 10; i++){
+  // http_call(i+1, 'techsummit-nodejs.eastus2.cloudapp.azure.com', 3000, '/test2');
   // https_call(i+1, 'tech-summit.azurewebsites.net', 443, '/api/Test02?code=vyluemgl2eobhxz81mc59udi4i16s4xo1sr0fr0wi70i93haorqfgsoqwqn0dsi1j4c65vobt9');
 
   // http_call(i+1, 'localhost', 3000, '/');
   
   // https_call(i+1, 'app-uat.digusign.com', 443, '/mobile-api/test2');
+
+  https_call(i+1, 'hktechsummit2017azfnlb01.azurewebsites.net', 443, '/api/Sha256Test/?n1=100&n2=100');
 }
 
 
