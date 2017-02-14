@@ -11,7 +11,7 @@ var azfnSha256Path = process.env.AZFNSHA256PATH
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Microsoft Tech Summit 2017' });
 });
 
 
